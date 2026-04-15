@@ -50,12 +50,13 @@ nav a:hover {
 
 
 section {
-    padding: 20px;
+    padding: 30px;
     margin: 10px;
     background-color: #b28282;
     color: #ebd9d9;
     margin: 20px auto;
     border-radius: 30px;
+    align-items: flex-start;
 }
 
 
@@ -77,6 +78,9 @@ section {
   gap: 20px;  
 }
 
+.projects img :hover {
+    transition: transform 1.0s ease;
+}
 
 footer {
     background-color: #ba5959;
@@ -97,7 +101,7 @@ textarea {
     background-color: rgba(255, 255, 255, 0.9); 
     font-family: inherit; 
 }
-input[type=submit]
+button, input[type=submit]
 {
     background-color: #ba5959;
     color: white;
@@ -106,4 +110,9 @@ input[type=submit]
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+}
+
+    button:hover {
+    background-color: #f6d5d5; 
+    transform: scale(1.05); 
 }
