@@ -15,38 +15,57 @@ header {
     color: #ba5959;
     text-align: center;
     padding: 20px;
+     white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
 }
 
 
 nav {
-    background-color: #c79d9d;
+    background-color: transparent;
     color: #eb9c9c;
-        padding: 30px;
+        padding: 20px;
         text-decoration: none;
     font-weight: bold;
     text-align: center;
+    align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: row;
     max-width: 400px;
     margin: 0 auto;
-    gap: 10px;
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
 
 }
 
-nav a:hover {
-    color:#f8dfdf;
-    margin: 20px auto;
+nav a{
+    color:inherit;
+    margin: 0 110px auto;
     text-decoration: none;
     font-size: 1.1rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 
 nav a:hover {
     color: white;
+    transform: scale(1.1);
 }
+
 
 
 section {
@@ -59,7 +78,21 @@ section {
     align-items: flex-start;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between text and image */
+    margin-bottom: 30px;
+}
 
+
+.profile-image img {
+    width: 250px; /* Slightly smaller looks more balanced */
+    height: 250px;
+    object-fit: cover; /* Prevents the image from stretching */
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Adds a subtle depth */
+}
 .projects {
     display: grid;        
     flex-wrap: wrap;      
@@ -71,11 +104,12 @@ section {
 
 
 .projects img {
-    width: 30%;           
+    width: 100%;           
     border-radius: 10px;
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;  
+  transform: scale(1.03);
 }
 
 .projects img :hover {
@@ -83,10 +117,13 @@ section {
 }
 
 footer {
-    background-color: #ba5959;
+    background-color: #b28282;
     color: rgb(245, 240, 240);
     text-align: center;
     padding: 10px;
+    border-radius: 100px;
+    
+    
 }
 
 input[type="text"], 
@@ -107,16 +144,19 @@ button, input[type=submit]
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: inherit;
+    transform: translate(-2px);
 }
 
     button:hover {
     background-color: #f6d5d5; 
     transform: scale(1.05); 
 }
-@media (max-width: 600px) {}
+@media (max-width: 600px) {} /*for responsive design(mobile devices and tablets */
     .projects img {
         width: 100%; 
     }
@@ -127,4 +167,20 @@ button, input[type=submit]
     nav a {
         margin: 10px 0; 
     }
+
+    .projects {
+        grid-template-columns: 1fr; /* Force projects into a single column */
+        padding: 10px;
+    }
+
+    .projects img {
+        width: 100%; /* These make images full width of their container */
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    textarea {
+        max-width: 100%; /* This ensures form fields don't overflow */
+    }
+    
     
