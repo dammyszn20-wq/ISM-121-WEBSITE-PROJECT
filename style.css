@@ -4,6 +4,9 @@ body {max-width: 900px;
     padding: 20px;
     line-height: 1.7; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #ebd9d9;
+  color: #4a3b3b;
+  min-height: 100vh
 }
 
           
@@ -22,8 +25,12 @@ nav {
         text-decoration: none;
     font-weight: bold;
     text-align: center;
-    display: flexbox;
+    display: flex;
     justify-content: center;
+    flex-direction: row;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
 
 }
 
@@ -48,6 +55,7 @@ section {
     background-color: #b28282;
     color: #ebd9d9;
     margin: 20px auto;
+    border-radius: 30px;
 }
 
 
@@ -75,4 +83,27 @@ footer {
     color: rgb(245, 240, 240);
     text-align: center;
     padding: 10px;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea {
+    width: 100%; 
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ebd9d9;
+    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    font-family: inherit; 
+}
+input[type=submit]
+{
+    background-color: #ba5959;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
 }
