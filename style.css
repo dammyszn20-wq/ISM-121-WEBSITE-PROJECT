@@ -1,9 +1,9 @@
  
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+body {max-width: 900px; 
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.7; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
           
@@ -16,22 +16,29 @@ header {
 
 
 nav {
-    background-color: #6B4F4F;
-    padding: 10px;
-    text-decoration: none;
+    background-color: #c79d9d;
+    color: #eb9c9c;
+        padding: 30px;
+        text-decoration: none;
     font-weight: bold;
     text-align: center;
+    display: flexbox;
+    justify-content: center;
+
 }
 
 nav a:hover {
-    color:#e2a7a7;
+    color:#f8dfdf;
     margin: 20px auto;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 
 nav a:hover {
-    color: rgb(204, 149, 132);
+    color: white;
 }
 
 
@@ -39,7 +46,7 @@ section {
     padding: 20px;
     margin: 10px;
     background-color: #b28282;
-    color: #E0E0E0;
+    color: #ebd9d9;
     margin: 20px auto;
 }
 
@@ -48,7 +55,8 @@ section {
     display: grid;        
     flex-wrap: wrap;      
     gap: 20px; 
-    padding: 20px;    
+    padding: 40px; 
+    
 
 }
 
@@ -64,7 +72,7 @@ section {
 
 footer {
     background-color: #ba5959;
-    color: white;
+    color: rgb(245, 240, 240);
     text-align: center;
     padding: 10px;
 }
