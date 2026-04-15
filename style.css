@@ -116,3 +116,15 @@ button, input[type=submit]
     background-color: #f6d5d5; 
     transform: scale(1.05); 
 }
+@media (max-width: 600px) {}
+    .projects img {
+        width: 100%; 
+    }
+    nav {
+        flex-direction: row; /* Stack navigation links vertically */
+        padding: 15px;
+    }
+    nav a {
+        margin: 10px 0; 
+    }
+    
